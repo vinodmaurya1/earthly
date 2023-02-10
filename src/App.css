@@ -1,38 +1,524 @@
-.App {
-  text-align: center;
+
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Kaushan+Script&family=Nanum+Gothic&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+
+/* navbar */
+
+.navbar{
+  background-color: #aefd94!important;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imgLogo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+ 
+.navbar-brand {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.titleDesc{
+ position: absolute;
+ font-size: 14px;
+ margin-top: 48px;
+
+}
+
+.dieImg img{
+ margin-left: 400px;
+  height: 65px;
+  width: 65px;
+  transition: all .1s ease-in-out .1s;
+}
+
+.dieImg img:hover{
+ rotate: 30deg;
+}
+
+
+
+
+.container a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.home{
+  /* position: absolute; */
+  top: 22px;
+    left: 915px;
+}
+
+
+.shop{
+  /* position: absolute; */
+  top: 23px;
+  right: 290px;
+}
+
+.getBtn{
+  /* position: absolute;
+  top: 18px; */
+  left: 1100px;
+  border-radius: 20px;
+}
+
+
+
+.navCart img{
+
+  /* position: absolute;
+  top: 17px;
+  left: 1270px;*/
+  height: 40px;
+  width: 40px; 
+}
+
+.navCart span{
+  position: absolute;
+  top: 24px;
+    left: 1424px;
+}
+
+
+#cardcarouselExampleAutoplaying{
+  height: 440px;;
+}
+
+
+.cardBg{
+ background: linear-gradient(184deg, #f3c8c8, #a5ed93);
+
+}
+
+.cardText{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.addCartBtn{
+  color: #ffffff;
+  background-color: #000000;
+width: 250px;
+}
+
+.about{
+  background-color: #000000;
+  /* width: 400px; */
+  
+}
+.aboutBody{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+
+.aboutTitle{
+  padding: 46px;
+color: green;
+font-size: 60px;
+text-align: center;
+font-weight: bolder;
+
+}
+.aboutDesc{
+  color: aliceblue;
+  text-align: center;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+.contactTitle{
+  font-size: 50px;
+  font-weight: bold;
+  font-family:cursive ;
+}
+
+.addDesc{
+  font-size: 20px;
+}
+
+.instaLogo {
+  height: 26px;
+  width: 27px;
+}
+
+.locationLogo{
+  height: 27px;
+  width: 20px;
+
+}
+
+.userInput{
+  background-color: #f5ffed;
+  border-radius: 20px;
+  /* padding-right: 10px; */
+  
+  
+}
+
+.userInputTitle{
+  color: #3aa520;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+font-weight: bold;
+text-align: center;
+}
+
+.inputBg{
+  
+  background-color: #f5ffed;
+  margin-top: 10px;
+  width: 300px;
+  height: 62px;
+}
+.inputMsg{
+  height: 130px;
+  width: 700px;
+}
+
+.formFont{
+  color: #4bab34;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+
+.userSubmitBtn{
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  background-color:  #3aa520;
+  width: 709px;
+}
+
+.userSubmitBtn:hover{
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  background-color:  #175e05;
+
+}
+
+.coverBg{
+  height: 100vh;
+  background-image: url('./image/earthlyCoverpic.jpg');
+background-attachment: fixed;
+}
+
+.footerUpTitle{
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.footerUpTitleDesc{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+  
+}
+
+
+.joinBtn{
+width: 400px;
+}
+
+.footerDown{
+background-color: #000000;
+height: 250px;
+}
+
+/*FOOTER*/
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
 }
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+.social-network a.icoInsta:hover {
+  background-color: #de2b6a;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+.social-network a.icoGitHub:hover {
+  background-color: #000000;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+/* ChatBot */
+
+.chatBotBtn{
+  width: 160px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 35px;
+  margin-bottom: 28px;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  z-index: 1030;
+
+
+}
+
+.chatBotBtn img{
+  margin-right: 10px;
+  filter:invert();
+  width: 28px;
+  height: 29px;
+}
+
+
+
+@media only screen and (max-width:400px) {
+  .navbar{
+   width: 390px;
+  }
+
+  .carouselHome{
+    height: 260px;
+  }
+  .carouselImg{
+    height: 260px;
+  }
+  .carouselBtn{
+    height: 340px;
+  }
+
+  .contact{
+    display: flex!important;
+    flex-direction: column;
+  }
+
+  .contactSection{
+    width: 390px;
+  }
+
+  .contactAside img{
+width: 390px;
+  }
+.chatBotBtn{
+  bottom: 35px;
+}
+
+.dieImg img{
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+.addCartBtn{
+  width: 80px;
+}
+.cardBg{
+  margin: 3px;
+}
+
+.inputMsg{
+  width: 390px;
+}
+.inputMsg{
+  width: 390px;
+}
+}
+
+@media only screen and (min-width:401px) and (max-width:600px){
+  .navbar{
+    width: 600px;
+  }
+
+  .contact{
+    display: flex!important;
+    flex-direction: column;
+  }
+  .contactSection{
+    width: 600px;
+  }
+  .contactAside img{
+    width: 510px;
+    }
+    .inputMsg{
+      width: 450px;
+    }
+    
+    .chatBotBtn{
+      bottom: 35px;
+    }
+    .userSubmitBtn{
+      width: 450px;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:830px){
+  
+  .navbar{
+    width: 820px;
+  }
+  
+  .contact{
+    display: flex!important;
+    flex-direction: column;
+  }
+  
+  .contactSection{
+    width: 820px;
+  }
+  
+  .contactAside img{
+width: 710px;
+}
+
+.inputMsg{
+  width: 650px;
+}
+
+.chatBotBtn{
+  bottom: 35px;
+}
+
+.userSubmitBtn{
+  width: 550px;
+}
+
+}
+
+@media only screen and (min-width:831px) and (max-width:1200px){
+  
+  .navbar{
+    width: 1200px;
+  }
+  
+  .contact{
+    display: flex!important;
+    flex-direction: column;
+  }
+  .contactSection{
+    width: 830px;
+  }
+  .contactAside img{
+    width: 550px;
+    }
+    .inputMsg{
+      width: 710px;
+    }
+    
+    .chatBotBtn{
+      bottom: 35px;
+    }
+    .userSubmitBtn{
+      width: 700px;
+    }
+  }
+  
